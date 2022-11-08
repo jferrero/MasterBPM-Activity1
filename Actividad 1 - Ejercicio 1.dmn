@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_DBC7D6C1-816D-43F8-8A41-275ACE715B7D" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_1C072C75-9A41-40C8-99C4-93125A81BCAE" name="Actividad 1 - Ejercicio 1" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_DBC7D6C1-816D-43F8-8A41-275ACE715B7D">
+  <dmn:extensionElements/>
+  <dmn:itemDefinition id="_5E925C9A-3BEC-451D-AABE-B11F77BF1E20" name="tCustomer" isCollection="false">
+    <dmn:itemComponent id="_0AD4BB78-7B25-428A-87D2-71C606051875" name="Age" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_055958AA-06C5-4BC2-B846-2085F3995622" name="DrivingExperienceYears" isCollection="false">
+      <dmn:typeRef>number</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_AB66E8B1-E851-4A18-8378-A5E8F7D9B426" name="HasLoyaltyCard" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:inputData id="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" name="Customer">
+    <dmn:extensionElements/>
+    <dmn:variable id="_5161CAD7-03CE-4BF7-8B7C-366C383EB2D0" name="Customer" typeRef="tCustomer"/>
+  </dmn:inputData>
+  <dmn:decision id="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" name="Decision-1">
+    <dmn:extensionElements/>
+    <dmn:variable id="_C0212971-A7CA-42D3-9156-352C88CCEA1D" name="Decision-1" typeRef="boolean"/>
+    <dmn:informationRequirement id="_19F10F13-CE94-4B86-9DD9-E4F09A3655E7">
+      <dmn:requiredInput href="#_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_0F04EAA9-1E9D-4ED9-B0F3-A120E6729370" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_6E8AB14E-0BF7-4535-AC60-6C06F7E850A2">
+        <dmn:inputExpression id="_F13163EE-0E27-4126-A790-F1303DE24261" typeRef="number">
+          <dmn:text>Customer.Age</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_E9FA207B-CF22-414C-9921-D64B44E61B0E">
+        <dmn:inputExpression id="_E14ABDA4-4105-4964-B95D-D2DF5C4D6A6C" typeRef="number">
+          <dmn:text>Customer.DrivingExperienceYears</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_5AEED91A-F6A4-4112-A2F4-548FF32BB01F">
+        <dmn:inputExpression id="_BA8C0695-70F8-497E-8422-4A067A56ED92" typeRef="boolean">
+          <dmn:text>Customer.HasLoyaltyCard</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_31E89590-86EB-48DB-93FF-4C3EFEFA3C89"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_B6862931-2936-4B8A-82A8-EE8890DAED6F">
+        <dmn:inputEntry id="_B9990677-1161-4D51-9A20-D9549DDCC452">
+          <dmn:text>&lt;18</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_948371A5-446E-4F56-A7DA-30F1DF19BF54">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_45E697C0-406E-4E1D-89FF-7C77F4CB80F5">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_A3C898C4-A6D3-4A36-90B7-80A6260822FD">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text>Los clientes deben ser mayores de 18 años</dmn:text>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_CDD26BAB-AF99-4799-AF99-A683AC1F10BB">
+        <dmn:inputEntry id="_39DE0921-C3E3-46F1-9C90-AD7EE37E9577">
+          <dmn:text>[18..22)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_69029F8F-7E7A-4AFB-AF68-4D001E19810C">
+          <dmn:text>&gt;=5</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_BFBEC6BF-ACC3-4689-A247-045768A57ED2">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_13CBE85E-B101-4AB1-8807-9C35F772B5C0">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text>-	Los jóvenes no miembros menores de 23 años, deben tener al menos 5 años de experiencia como conductores</dmn:text>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_391C3E67-9B42-4BD2-ACDF-0828EE96FFF4">
+        <dmn:inputEntry id="_60C11546-5E2F-4202-BE4A-4649E949558C">
+          <dmn:text>[18..22)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_6A8AFCB7-20E3-4806-A000-815E949528C9">
+          <dmn:text>[2..5)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_57291F36-5996-4C1C-9168-1E1F89BABF34">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_D84119AC-3713-42FA-B7B7-75B4B7B59CC7">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text>-	Los jóvenes menores de 23 años y miembros de la tarjeta de fidelización deben tener solo 2 años de experiencia como conductor.</dmn:text>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_D9101EFB-01A8-4816-B04F-DD78F47594C9">
+        <dmn:inputEntry id="_ABE2D9CC-6C35-4876-94E9-E4AC4A91476D">
+          <dmn:text>[18..22)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_50C9D5A1-6A40-421E-A412-D4427A2193BA">
+          <dmn:text>[2..5)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_97E3CB23-F1E0-4212-AEEA-1377A0DBFD0F">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_F08BE0D8-9DCD-455B-90E5-EEED5A4B15E6">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_27FD32D5-CB97-4EDF-BDB9-F66B7A09CDA3">
+        <dmn:inputEntry id="_C4160740-A87D-40E3-B355-6733159920F4">
+          <dmn:text>[18..22)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_B5F03561-9CAD-4CE9-8636-C43C762944DA">
+          <dmn:text>&lt;2</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7A396AF2-903F-4FE9-8815-828C0EC730F4">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_526D790B-187B-4B0A-87B0-C955B6C9B531">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_F211A159-4B00-48B5-B8B3-DB66937A8A3D">
+        <dmn:inputEntry id="_FFA09B6D-CC39-44F3-81B1-DA84D8BDB137">
+          <dmn:text>&gt;=22</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_14EE92D1-FF00-422E-9206-63648B1D318B">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_5BC97AB6-BE55-4F6F-A02A-0500A12A27B8">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_C8998DF1-ADCE-4115-8868-7EF1FFF2369E">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text>Implicito: A los mayores de 23 se les rentará</dmn:text>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram id="_4736FF0C-A8DD-4013-87E2-99E03F90637F" name="DRG">
+      <di:extension>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_0F04EAA9-1E9D-4ED9-B0F3-A120E6729370">
+            <kie:width>50</kie:width>
+            <kie:width>166</kie:width>
+            <kie:width>287</kie:width>
+            <kie:width>179</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>321</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
+      </di:extension>
+      <dmndi:DMNShape id="dmnshape-drg-_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" dmnElementRef="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="448" y="253" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_C7D5826A-7215-4F81-8290-CC36DA30EBEF" dmnElementRef="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="643" y="99" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-drg-_19F10F13-CE94-4B86-9DD9-E4F09A3655E7" dmnElementRef="_19F10F13-CE94-4B86-9DD9-E4F09A3655E7">
+        <di:waypoint x="498" y="278"/>
+        <di:waypoint x="693" y="149"/>
+      </dmndi:DMNEdge>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</dmn:definitions>
