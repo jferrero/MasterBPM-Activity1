@@ -12,13 +12,13 @@
       <dmn:typeRef>boolean</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" name="Customer">
+  <dmn:inputData id="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" name="Dog previous activities">
     <dmn:extensionElements/>
-    <dmn:variable id="_5161CAD7-03CE-4BF7-8B7C-366C383EB2D0" name="Customer" typeRef="tCustomer"/>
+    <dmn:variable id="_5161CAD7-03CE-4BF7-8B7C-366C383EB2D0" name="Dog previous activities" typeRef="tCustomer"/>
   </dmn:inputData>
-  <dmn:decision id="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" name="Decision-1">
+  <dmn:decision id="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" name="Customer can rent?">
     <dmn:extensionElements/>
-    <dmn:variable id="_C0212971-A7CA-42D3-9156-352C88CCEA1D" name="Decision-1" typeRef="boolean"/>
+    <dmn:variable id="_C0212971-A7CA-42D3-9156-352C88CCEA1D" name="Customer can rent?" typeRef="boolean"/>
     <dmn:informationRequirement id="_19F10F13-CE94-4B86-9DD9-E4F09A3655E7">
       <dmn:requiredInput href="#_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC"/>
     </dmn:informationRequirement>
@@ -164,7 +164,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="448" y="253" width="100" height="50"/>
+        <dc:Bounds x="642" y="390" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_C7D5826A-7215-4F81-8290-CC36DA30EBEF" dmnElementRef="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" isCollapsed="false">
@@ -173,12 +173,12 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="643" y="99" width="100" height="50"/>
+        <dc:Bounds x="643" y="258" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_19F10F13-CE94-4B86-9DD9-E4F09A3655E7" dmnElementRef="_19F10F13-CE94-4B86-9DD9-E4F09A3655E7">
-        <di:waypoint x="498" y="278"/>
-        <di:waypoint x="693" y="149"/>
+        <di:waypoint x="692" y="415"/>
+        <di:waypoint x="693" y="308"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
