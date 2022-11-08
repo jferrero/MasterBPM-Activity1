@@ -12,9 +12,9 @@
       <dmn:typeRef>boolean</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:inputData id="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" name="Dog previous activities">
+  <dmn:inputData id="_82CCC2C5-0AF2-4DF8-8DC4-E93C2ADD82CC" name="Customer">
     <dmn:extensionElements/>
-    <dmn:variable id="_5161CAD7-03CE-4BF7-8B7C-366C383EB2D0" name="Dog previous activities" typeRef="tCustomer"/>
+    <dmn:variable id="_5161CAD7-03CE-4BF7-8B7C-366C383EB2D0" name="Customer" typeRef="tCustomer"/>
   </dmn:inputData>
   <dmn:decision id="_C7D5826A-7215-4F81-8290-CC36DA30EBEF" name="Customer can rent?">
     <dmn:extensionElements/>
