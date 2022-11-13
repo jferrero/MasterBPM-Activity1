@@ -33,9 +33,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs" typeRef="tDogAgressiveActs"/>
   </dmn:inputData>
-  <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="IsDogVicious">
+  <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="IsDogVicious?">
     <dmn:extensionElements/>
-    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious" typeRef="boolean"/>
+    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious?" typeRef="boolean"/>
     <dmn:informationRequirement id="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
@@ -44,14 +44,15 @@
     </dmn:informationRequirement>
     <dmn:literalExpression id="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
       <dmn:text>if ( DogWasProvoked ) then 
-	if (
-		any( DogAggresiveActs.tHasBittenHuman, DogAggresiveActs.tTriedBiteHuman, DogAggresiveActs.tDidHuntAnimal, DogAggresiveActs.tDidBiteAnimal, DogAggresiveActs.tDidHurtAnimal, DogAggresiveActs.tDidKillAnimal)
-		) then 
-       	true
-    else
-        false
+	false
 else
-	"false"</dmn:text>
+	if (
+	any( DogAggresiveActs.tHasBittenHuman, DogAggresiveActs.tTriedBiteHuman, DogAggresiveActs.tDidHuntAnimal, DogAggresiveActs.tDidBiteAnimal, DogAggresiveActs.tDidHurtAnimal, DogAggresiveActs.tDidKillAnimal)
+	) then 
+   		true
+	else
+        false
+</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_09CB5F0D-916D-48C7-8EC3-2A26648FCA89" name="DogWasProvoked">
@@ -62,9 +63,9 @@ else
     <dmn:extensionElements/>
     <dmn:variable id="_70F6E726-046E-44B7-91B9-B19819C02D51" name="DogPhysicialAttrs" typeRef="tDogPhysicalAttrs"/>
   </dmn:inputData>
-  <dmn:decision id="_D1116546-9917-4A2A-9461-DB4085F85C9F" name="Decision-1">
+  <dmn:decision id="_D1116546-9917-4A2A-9461-DB4085F85C9F" name="LicenseCost">
     <dmn:extensionElements/>
-    <dmn:variable id="_CEE177A1-5370-4790-9034-10C9B1A872CF" name="Decision-1"/>
+    <dmn:variable id="_CEE177A1-5370-4790-9034-10C9B1A872CF" name="LicenseCost"/>
     <dmn:informationRequirement id="_9E065E86-B88E-496F-83BC-3154F13555BE">
       <dmn:requiredInput href="#_C6144799-DD39-48FB-8FCB-E12B4A3DD40A"/>
     </dmn:informationRequirement>
@@ -91,16 +92,16 @@ else
       <dmn:annotation name="annotation-1"/>
       <dmn:rule id="_E5E2B1B0-824A-46FC-849E-E32F5EECA78A">
         <dmn:inputEntry id="_95AEBC2A-EB57-42CE-9E78-735F1B98CDB9">
-          <dmn:text>-</dmn:text>
+          <dmn:text>&gt;=0.5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_306CFE98-AF31-4E88-9B73-4BF2714F6033">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_CA160743-327D-48E4-A71C-1E67D57EB64A">
           <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_62426F3A-D2B9-4A57-8E32-53BF1F63EDEF">
-          <dmn:text/>
+          <dmn:text>120</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
@@ -108,10 +109,10 @@ else
       </dmn:rule>
       <dmn:rule id="_01F0D3FB-C398-40B5-9C9A-CE2F48D7A34C">
         <dmn:inputEntry id="_98FB4EED-8520-4887-8A61-A8CDAEE2F1DC">
-          <dmn:text>-</dmn:text>
+          <dmn:text>&lt;0.5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A95A1888-1AFF-46A3-8C6A-8AFE8CD2E76C">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_92418E37-E94D-4DE4-8FB9-7BB89A712801">
           <dmn:text>False</dmn:text>
