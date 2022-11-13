@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_C48A44CE-30DF-4448-95E0-6D6098DDA90E" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_64E91375-7F3E-446B-AD7F-21BC46351414" name="Actividad 1 - Ejercicio 2" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_C48A44CE-30DF-4448-95E0-6D6098DDA90E">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_E651FD3D-A6A9-48CA-8960-F47C355918AA" name="tDogAgressiveActs" isCollection="false">
+    <dmn:itemComponent id="_0F951E69-1D3B-4314-8419-BE3FC84D18EC" name="tHasBittenHuman" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_7C6AD80D-B908-40DD-8337-A0E925B9EFAF" name="tTriedBiteHuman" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_2C805101-1815-4EA5-B6E0-912DCEE1C8E7" name="tDidHuntAnimal" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_C80C7C25-E29C-46E9-BCA8-D5120FE69028" name="tDidBiteAnimal" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_9D65183E-725A-4E0B-A035-628ADF9B5F4D" name="tDidHurtAnimal" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+    <dmn:itemComponent id="_5643D3FC-F5FB-46EB-B230-F3551632C806" name="tDidKillAnimal" isCollection="false">
+      <dmn:typeRef>boolean</dmn:typeRef>
+    </dmn:itemComponent>
+  </dmn:itemDefinition>
+  <dmn:itemDefinition id="_DA140C99-BFBE-4BD2-BAE9-177BB7024F64" name="tDogWasProvoked" isCollection="false">
+    <dmn:typeRef>boolean</dmn:typeRef>
+  </dmn:itemDefinition>
   <dmn:inputData id="_F8FC47D8-C973-418A-B99A-F0608BA02CF5" name="DogAggresiveActs">
     <dmn:extensionElements/>
     <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs"/>
@@ -11,6 +34,26 @@
     <dmn:informationRequirement id="_DFF8F061-A952-4B22-ABA2-BD5C66520E1B">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
+    <dmn:decisionTable id="_A6883295-1D83-4468-A1E6-F5E0B2425B1C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_926C5FB7-0AB5-4535-BD42-EE7C1EDE51E6">
+        <dmn:inputExpression id="_B95F832B-AC79-4CCF-82BD-7317E041F744">
+          <dmn:text>DogAggresiveActs</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_CCC4AD97-9BDC-4BA8-965D-9CF102C1416D"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_84C14FEE-43BF-495D-9332-93C6232562A1">
+        <dmn:inputEntry id="_A5CA40AF-1C88-46E4-82D2-4208B555DEFA">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_B26A11D0-1D83-43B1-928C-575773AD4C48">
+          <dmn:text/>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_1DA0012E-3BC4-47C8-9752-B3F857051589" name="DogPhysicalAttrrs">
     <dmn:extensionElements/>
@@ -26,7 +69,14 @@
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_4BF1F783-32EE-4494-9E49-FA23372BA077" name="DRG">
       <di:extension>
-        <kie:ComponentsWidthsExtension/>
+        <kie:ComponentsWidthsExtension>
+          <kie:ComponentWidths dmnElementRef="_A6883295-1D83-4468-A1E6-F5E0B2425B1C">
+            <kie:width>50</kie:width>
+            <kie:width>297</kie:width>
+            <kie:width>227</kie:width>
+            <kie:width>100</kie:width>
+          </kie:ComponentWidths>
+        </kie:ComponentsWidthsExtension>
       </di:extension>
       <dmndi:DMNShape id="dmnshape-drg-_F8FC47D8-C973-418A-B99A-F0608BA02CF5" dmnElementRef="_F8FC47D8-C973-418A-B99A-F0608BA02CF5" isCollapsed="false">
         <dmndi:DMNStyle>
