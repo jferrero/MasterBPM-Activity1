@@ -21,60 +21,26 @@
       <dmn:typeRef>boolean</dmn:typeRef>
     </dmn:itemComponent>
   </dmn:itemDefinition>
-  <dmn:itemDefinition id="_DA140C99-BFBE-4BD2-BAE9-177BB7024F64" name="tDogWasProvoked" isCollection="false">
-    <dmn:typeRef>boolean</dmn:typeRef>
-  </dmn:itemDefinition>
   <dmn:inputData id="_F8FC47D8-C973-418A-B99A-F0608BA02CF5" name="DogAggresiveActs">
     <dmn:extensionElements/>
-    <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs"/>
+    <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs" typeRef="tDogAgressiveActs"/>
   </dmn:inputData>
-  <dmn:decision id="_EA350AE9-67CE-470B-8428-F0A2B010853B" name="Dog is vicious?">
+  <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="Decision-2">
     <dmn:extensionElements/>
-    <dmn:variable id="_AE349945-4D3A-4A0E-8FDB-3EB5809110FA" name="Dog is vicious?" typeRef="boolean"/>
-    <dmn:informationRequirement id="_DFF8F061-A952-4B22-ABA2-BD5C66520E1B">
+    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="Decision-2"/>
+    <dmn:informationRequirement id="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_A6883295-1D83-4468-A1E6-F5E0B2425B1C" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_926C5FB7-0AB5-4535-BD42-EE7C1EDE51E6">
-        <dmn:inputExpression id="_B95F832B-AC79-4CCF-82BD-7317E041F744">
-          <dmn:text>DogAggresiveActs</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_CCC4AD97-9BDC-4BA8-965D-9CF102C1416D"/>
-      <dmn:annotation name="annotation-1"/>
-      <dmn:rule id="_84C14FEE-43BF-495D-9332-93C6232562A1">
-        <dmn:inputEntry id="_A5CA40AF-1C88-46E4-82D2-4208B555DEFA">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_B26A11D0-1D83-43B1-928C-575773AD4C48">
-          <dmn:text/>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
-  <dmn:inputData id="_1DA0012E-3BC4-47C8-9752-B3F857051589" name="DogPhysicalAttrrs">
-    <dmn:extensionElements/>
-    <dmn:variable id="_1C1C79B6-039A-4AFB-9D1A-642B5FF1686C" name="DogPhysicalAttrrs"/>
-  </dmn:inputData>
-  <dmn:decision id="_A59F32C8-2DE6-4900-942A-58E74D06F3CC" name="Decision-1">
-    <dmn:extensionElements/>
-    <dmn:variable id="_5FF1532A-3756-4A0C-B196-F2336AE4AB1C" name="Decision-1"/>
-    <dmn:informationRequirement id="_4B94E579-EFF8-4923-801E-2F2B4CB25756">
-      <dmn:requiredDecision href="#_EA350AE9-67CE-470B-8428-F0A2B010853B"/>
-    </dmn:informationRequirement>
+    <dmn:literalExpression id="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
+      <dmn:text/>
+    </dmn:literalExpression>
   </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_4BF1F783-32EE-4494-9E49-FA23372BA077" name="DRG">
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_A6883295-1D83-4468-A1E6-F5E0B2425B1C">
-            <kie:width>50</kie:width>
-            <kie:width>297</kie:width>
-            <kie:width>227</kie:width>
-            <kie:width>100</kie:width>
+          <kie:ComponentWidths dmnElementRef="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
+            <kie:width>300</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -87,40 +53,18 @@
         <dc:Bounds x="758" y="409" width="124" height="52"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-drg-_EA350AE9-67CE-470B-8428-F0A2B010853B" dmnElementRef="_EA350AE9-67CE-470B-8428-F0A2B010853B" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-drg-_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" dmnElementRef="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="771" y="280" width="100" height="50"/>
+        <dc:Bounds x="945" y="233" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-drg-_1DA0012E-3BC4-47C8-9752-B3F857051589" dmnElementRef="_1DA0012E-3BC4-47C8-9752-B3F857051589" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="555" y="280" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-drg-_A59F32C8-2DE6-4900-942A-58E74D06F3CC" dmnElementRef="_A59F32C8-2DE6-4900-942A-58E74D06F3CC" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="666" y="110" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-drg-_DFF8F061-A952-4B22-ABA2-BD5C66520E1B" dmnElementRef="_DFF8F061-A952-4B22-ABA2-BD5C66520E1B">
+      <dmndi:DMNEdge id="dmnedge-drg-_70D65A9E-C276-4313-9C65-4BBE4C66DDD9-AUTO-TARGET" dmnElementRef="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
         <di:waypoint x="820" y="435"/>
-        <di:waypoint x="821" y="305"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-drg-_4B94E579-EFF8-4923-801E-2F2B4CB25756" dmnElementRef="_4B94E579-EFF8-4923-801E-2F2B4CB25756">
-        <di:waypoint x="821" y="305"/>
-        <di:waypoint x="716" y="160"/>
+        <di:waypoint x="995" y="283"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
