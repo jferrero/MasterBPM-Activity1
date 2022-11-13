@@ -33,9 +33,9 @@
     <dmn:extensionElements/>
     <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs" typeRef="tDogAgressiveActs"/>
   </dmn:inputData>
-  <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="IsDogVicious?">
+  <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="IsDogVicious">
     <dmn:extensionElements/>
-    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious?" typeRef="boolean"/>
+    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious" typeRef="boolean"/>
     <dmn:informationRequirement id="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
