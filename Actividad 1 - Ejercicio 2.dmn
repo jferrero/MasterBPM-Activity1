@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://kiegroup.org/dmn/_C48A44CE-30DF-4448-95E0-6D6098DDA90E" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_64E91375-7F3E-446B-AD7F-21BC46351414" name="Actividad 1 - Ejercicio 2" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://kiegroup.org/dmn/_C48A44CE-30DF-4448-95E0-6D6098DDA90E">
   <dmn:extensionElements/>
-  <dmn:inputData id="_F8FC47D8-C973-418A-B99A-F0608BA02CF5" name="Dog Previous aggresive activities">
+  <dmn:inputData id="_F8FC47D8-C973-418A-B99A-F0608BA02CF5" name="DogAggresiveActs">
     <dmn:extensionElements/>
-    <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="Dog Previous aggresive activities"/>
+    <dmn:variable id="_CD5F1B8A-3955-4B75-98EC-FB3953F83EDD" name="DogAggresiveActs"/>
   </dmn:inputData>
   <dmn:decision id="_EA350AE9-67CE-470B-8428-F0A2B010853B" name="Dog is vicious?">
     <dmn:extensionElements/>
     <dmn:variable id="_AE349945-4D3A-4A0E-8FDB-3EB5809110FA" name="Dog is vicious?" typeRef="boolean"/>
     <dmn:informationRequirement id="_DFF8F061-A952-4B22-ABA2-BD5C66520E1B">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
+    </dmn:informationRequirement>
+  </dmn:decision>
+  <dmn:inputData id="_1DA0012E-3BC4-47C8-9752-B3F857051589" name="DogPhysicalAttrrs">
+    <dmn:extensionElements/>
+    <dmn:variable id="_1C1C79B6-039A-4AFB-9D1A-642B5FF1686C" name="DogPhysicalAttrrs"/>
+  </dmn:inputData>
+  <dmn:decision id="_A59F32C8-2DE6-4900-942A-58E74D06F3CC" name="Decision-1">
+    <dmn:extensionElements/>
+    <dmn:variable id="_5FF1532A-3756-4A0C-B196-F2336AE4AB1C" name="Decision-1"/>
+    <dmn:informationRequirement id="_4B94E579-EFF8-4923-801E-2F2B4CB25756">
+      <dmn:requiredDecision href="#_EA350AE9-67CE-470B-8428-F0A2B010853B"/>
     </dmn:informationRequirement>
   </dmn:decision>
   <dmndi:DMNDI>
@@ -35,9 +46,31 @@
         <dc:Bounds x="771" y="280" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_1DA0012E-3BC4-47C8-9752-B3F857051589" dmnElementRef="_1DA0012E-3BC4-47C8-9752-B3F857051589" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="555" y="280" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_A59F32C8-2DE6-4900-942A-58E74D06F3CC" dmnElementRef="_A59F32C8-2DE6-4900-942A-58E74D06F3CC" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="666" y="110" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_DFF8F061-A952-4B22-ABA2-BD5C66520E1B" dmnElementRef="_DFF8F061-A952-4B22-ABA2-BD5C66520E1B">
         <di:waypoint x="820" y="435"/>
         <di:waypoint x="821" y="305"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_4B94E579-EFF8-4923-801E-2F2B4CB25756" dmnElementRef="_4B94E579-EFF8-4923-801E-2F2B4CB25756">
+        <di:waypoint x="821" y="305"/>
+        <di:waypoint x="716" y="160"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
