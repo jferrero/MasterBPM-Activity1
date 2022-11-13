@@ -97,8 +97,7 @@ else
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_CA160743-327D-48E4-A71C-1E67D57EB64A">
-          <dmn:text>true
-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_62426F3A-D2B9-4A57-8E32-53BF1F63EDEF">
           <dmn:text/>
