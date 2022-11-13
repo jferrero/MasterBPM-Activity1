@@ -27,7 +27,7 @@
   </dmn:inputData>
   <dmn:decision id="_6AC617E3-67AD-4DA7-B2D3-6CC1F3BDB25B" name="IsDogVicious?">
     <dmn:extensionElements/>
-    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious?"/>
+    <dmn:variable id="_42DFDAD3-1331-4DF9-B679-08E6F59499CA" name="IsDogVicious?" typeRef="boolean"/>
     <dmn:informationRequirement id="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
@@ -35,7 +35,15 @@
       <dmn:requiredInput href="#_09CB5F0D-916D-48C7-8EC3-2A26648FCA89"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
-      <dmn:text>if 20 &gt; 0 then “YES” else “NO”</dmn:text>
+      <dmn:text>if ( DogWasProvoked ) then 
+	if (
+		any( DogAggresiveActs.tHasBittenHuman, DogAggresiveActs.tTriedBiteHuman, DogAggresiveActs.tDidHuntAnimal, DogAggresiveActs.tDidBiteAnimal, DogAggresiveActs.tDidHurtAnimal, DogAggresiveActs.tDidKillAnimal)
+		) then 
+       	true
+    else
+        false
+else
+	"false"</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmn:inputData id="_09CB5F0D-916D-48C7-8EC3-2A26648FCA89" name="DogWasProvoked">
@@ -47,7 +55,7 @@
       <di:extension>
         <kie:ComponentsWidthsExtension>
           <kie:ComponentWidths dmnElementRef="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
-            <kie:width>1395</kie:width>
+            <kie:width>1078</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
