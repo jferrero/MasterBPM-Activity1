@@ -231,7 +231,7 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_1D4EFE2C-03B3-463C-9103-E2D35F5A6061">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_ADA5B217-0AC2-4618-B81C-DAD3E44A8EE9">
           <dmn:text>-</dmn:text>
@@ -260,7 +260,7 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_77F8DF7B-FE2B-4D49-A6F7-AFE1F5CC0898">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_4E325016-4A4A-47C4-828C-B4D69BC0CAAA">
           <dmn:text>-</dmn:text>
@@ -289,7 +289,7 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A9F02C0C-AC06-45C8-9EA7-6253ADCF6B19">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_C7CF5D91-5274-405A-83A3-55477F37BC89">
           <dmn:text>-</dmn:text>
@@ -318,7 +318,7 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_5B767F0F-C60D-40AB-9DBC-2285565FD666">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_DCA60773-02CB-432B-9E13-96D37CC0B464">
           <dmn:text>-</dmn:text>
@@ -347,7 +347,7 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_9C682465-0271-4B0D-A504-52DBDDAA73B4">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_8B01DA11-15F2-4BBC-B513-0070CE2E923F">
           <dmn:text>true</dmn:text>
