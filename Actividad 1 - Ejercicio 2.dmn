@@ -124,7 +124,8 @@ cualquier otro animal), entonces la tarifa es de  100 € </dmn:text>
           <dmn:text>20</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Si el animal es mayor o igual a 6 meses y está esterilizado, la tarifa es de  
+20 € </dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_260BD9EF-744B-4F05-A40E-B58A0EFF41F9">
@@ -141,7 +142,8 @@ cualquier otro animal), entonces la tarifa es de  100 € </dmn:text>
           <dmn:text>40</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Si el animal es mayor o igual a 6 meses y no está esterilizado, la tarifa es 
+de 40 €</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_12F735D8-4638-4EFC-ADF4-218FABCA6354">
@@ -158,7 +160,25 @@ cualquier otro animal), entonces la tarifa es de  100 € </dmn:text>
           <dmn:text>20</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Si el animal tiene menos de 6 meses y no está esterilizado, la tarifa es de  
+20 €</dmn:text>
+        </dmn:annotationEntry>
+      </dmn:rule>
+      <dmn:rule id="_14CBA3F7-C8F2-4756-837B-CE299E3DF51A">
+        <dmn:inputEntry id="_FF01572F-5F91-48F5-94AC-7F1F06356DD2">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_003871E0-96FD-4DB5-B5A9-A8F59E4BF138">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_63D34E87-01FE-426A-834B-7159D70E01CC">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_FD9A1CCB-E204-4258-8285-C09678331D1D">
+          <dmn:text>0</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text>Se asume que perros esterilizados menores que 6 meses no tienen cargo adicional</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
     </dmn:decisionTable>
