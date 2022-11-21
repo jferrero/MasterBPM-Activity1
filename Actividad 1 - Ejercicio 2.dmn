@@ -142,6 +142,23 @@ de 40 €</dmn:text>
 20 €</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_C04B3091-1ED0-4CED-88CF-EDED838FD4D8">
+        <dmn:inputEntry id="_2C0E18F4-04C0-4F08-8E0D-7C227D6092A5">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_61E0E537-2139-49C3-9378-0FA9DFE9D8DC">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_A433F7CA-41FA-4FAA-9FC4-C8C1BBB42A75">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_702F9B29-A15D-489F-8E35-F60ABF0EE52B">
+          <dmn:text/>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:decision id="_1A5EF20A-35A2-48FD-AFBD-CDB5D2C33887" name="IsDogVicious">
