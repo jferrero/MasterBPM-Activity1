@@ -44,14 +44,14 @@
     </dmn:informationRequirement>
     <dmn:literalExpression id="_25B80BE5-019F-42C5-BB15-6F005360DD7C">
       <dmn:text>if ( DogWasProvoked ) then 
-	false
-else
 	if (
 	any( DogAggresiveActs.tHasBittenHuman, DogAggresiveActs.tTriedBiteHuman, DogAggresiveActs.tDidHuntAnimal, DogAggresiveActs.tDidBiteAnimal, DogAggresiveActs.tDidHurtAnimal, DogAggresiveActs.tDidKillAnimal)
 	) then 
    		true
 	else
         false
+else
+	false
 </dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
