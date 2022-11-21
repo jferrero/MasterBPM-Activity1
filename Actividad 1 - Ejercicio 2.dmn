@@ -268,7 +268,7 @@ de 40 €</dmn:text>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="732.1308411214953" y="564" width="124" height="52"/>
+        <dc:Bounds x="745.1308411214953" y="564" width="124" height="52"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_09CB5F0D-916D-48C7-8EC3-2A26648FCA89" dmnElementRef="_09CB5F0D-916D-48C7-8EC3-2A26648FCA89" isCollapsed="false">
@@ -295,7 +295,7 @@ de 40 €</dmn:text>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="745" y="126" width="100" height="50"/>
+        <dc:Bounds x="787" y="95" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_1A5EF20A-35A2-48FD-AFBD-CDB5D2C33887" dmnElementRef="_1A5EF20A-35A2-48FD-AFBD-CDB5D2C33887" isCollapsed="false">
@@ -318,11 +318,11 @@ de 40 €</dmn:text>
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_0FA3C9A9-791A-4C2D-81EA-904B8A6CB594-AUTO-TARGET" dmnElementRef="_0FA3C9A9-791A-4C2D-81EA-904B8A6CB594">
         <di:waypoint x="666.5" y="276.5"/>
-        <di:waypoint x="795" y="176"/>
+        <di:waypoint x="837" y="145"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_BCFC449E-C6F8-4C30-BFF6-D44B21912D93" dmnElementRef="_BCFC449E-C6F8-4C30-BFF6-D44B21912D93">
         <di:waypoint x="1009" y="255"/>
-        <di:waypoint x="795" y="176"/>
+        <di:waypoint x="837" y="145"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_17A2683F-04D2-41EB-B79A-2708B055AF11" dmnElementRef="_17A2683F-04D2-41EB-B79A-2708B055AF11">
         <di:waypoint x="997" y="434.82558139534876"/>
@@ -333,7 +333,7 @@ de 40 €</dmn:text>
         <di:waypoint x="1009" y="280"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_F7D47EE4-34F0-4B18-94C0-26C9C603D9BB" dmnElementRef="_F7D47EE4-34F0-4B18-94C0-26C9C603D9BB">
-        <di:waypoint x="794.1308411214953" y="590"/>
+        <di:waypoint x="807.1308411214953" y="590"/>
         <di:waypoint x="808" y="422"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
