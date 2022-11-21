@@ -220,7 +220,8 @@ de 40 €</dmn:text>
       <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
     </dmn:informationRequirement>
     <dmn:literalExpression id="_0439BA83-7693-4675-8A1C-C691F2CC8E40">
-      <dmn:text/>
+      <dmn:text>any( DogAggresiveActs.tHasBittenHuman, DogAggresiveActs.tTriedBiteHuman, DogAggresiveActs.tDidHuntAnimal, DogAggresiveActs.tDidBiteAnimal, DogAggresiveActs.tDidHurtAnimal, DogAggresiveActs.tDidKillAnimal)
+</dmn:text>
     </dmn:literalExpression>
   </dmn:decision>
   <dmndi:DMNDI>
