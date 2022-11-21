@@ -183,6 +183,73 @@ de 40 €</dmn:text>
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:decision id="_AE954511-F7C9-4C16-A0D4-540DEF8AD555" name="DogCommittedAggresiveAct">
+    <dmn:extensionElements/>
+    <dmn:variable id="_F73F477E-DF5B-4C68-BAAF-8E0D410C890A" name="DogCommittedAggresiveAct"/>
+    <dmn:informationRequirement id="_C0FA3925-DED0-4219-9DAC-D534B727AD48">
+      <dmn:requiredInput href="#_F8FC47D8-C973-418A-B99A-F0608BA02CF5"/>
+    </dmn:informationRequirement>
+    <dmn:decisionTable id="_E4FAA536-DDDF-4748-B694-B9B9232BDD6C" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
+      <dmn:input id="_2C303E3A-D010-460B-A3B9-22A64B051F4C">
+        <dmn:inputExpression id="_34DF38B2-7C26-475C-A364-2CAC1B670948" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tDidBiteAnimal</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_0DE810AE-FBEA-4E17-8119-FEB90BC730B7">
+        <dmn:inputExpression id="_9A1A83D4-32B1-4E2A-A3A5-735CE3B32243" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tDidHuntAnimal</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_3B6EBCDD-328F-446D-8B9F-5276834675E6">
+        <dmn:inputExpression id="_38BE378E-A870-4110-A770-F2F982F275BE" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tDidHurtAnimal</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_6D5CE819-2C04-4560-931C-AD847E4D058B">
+        <dmn:inputExpression id="_4B98EB6F-0620-41FA-BB30-1CD0F367C52E" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tDidKillAnimal</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_AC2ED60B-2956-421F-B4A5-6A22474FC868">
+        <dmn:inputExpression id="_ADC7EBFB-CBBE-4B0E-B52C-324AFF8F0125" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tHasBittenHuman</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:input id="_46626EDB-3B7E-4AB0-A215-27F223EEC3D3">
+        <dmn:inputExpression id="_A05C5FEA-492C-45E2-A1AF-AEE5D204CFB9" typeRef="boolean">
+          <dmn:text>DogAggresiveActs.tTriedBiteHuman</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_22479F0C-4981-4C0D-8150-50480AE5F867"/>
+      <dmn:annotation name="annotation-1"/>
+      <dmn:rule id="_EB48B717-DF32-46D5-B931-C032E3637C81">
+        <dmn:inputEntry id="_2F3B2EF8-0ABC-4FDD-8212-BEFE7CE35437">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_500D6744-38A3-4AB1-B5DF-227814620E9A">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_C0A0586E-28E0-4031-BA06-3B7F716E43F8">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_59DE50FA-98F3-420D-BB36-136D48A33AC8">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0E3561B4-D4D7-4802-8624-E54BA0F19AF6">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_0D61138A-CE52-44DA-8C7D-B4AC69FFE685">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_EBB77319-3F28-4BF6-A806-6F3CDE47C4C4">
+          <dmn:text>true</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
+    </dmn:decisionTable>
+  </dmn:decision>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram id="_4BF1F783-32EE-4494-9E49-FA23372BA077" name="DRG">
       <di:extension>
@@ -197,6 +264,17 @@ de 40 €</dmn:text>
             <kie:width>199</kie:width>
             <kie:width>100</kie:width>
             <kie:width>596</kie:width>
+          </kie:ComponentWidths>
+          <kie:ComponentWidths dmnElementRef="_E4FAA536-DDDF-4748-B694-B9B9232BDD6C">
+            <kie:width>50</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
+            <kie:width>100</kie:width>
           </kie:ComponentWidths>
         </kie:ComponentsWidthsExtension>
       </di:extension>
@@ -245,6 +323,15 @@ de 40 €</dmn:text>
         <dc:Bounds x="745" y="126" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-drg-_AE954511-F7C9-4C16-A0D4-540DEF8AD555" dmnElementRef="_AE954511-F7C9-4C16-A0D4-540DEF8AD555" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="562" y="344.53546395193587" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-drg-_70D65A9E-C276-4313-9C65-4BBE4C66DDD9-AUTO-TARGET" dmnElementRef="_70D65A9E-C276-4313-9C65-4BBE4C66DDD9">
         <di:waypoint x="820" y="435"/>
         <di:waypoint x="906" y="300"/>
@@ -260,6 +347,10 @@ de 40 €</dmn:text>
       <dmndi:DMNEdge id="dmnedge-drg-_606476B0-09D4-4706-91C2-1CBB7D90CD1C" dmnElementRef="_606476B0-09D4-4706-91C2-1CBB7D90CD1C">
         <di:waypoint x="906" y="275"/>
         <di:waypoint x="795" y="176"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-drg-_C0FA3925-DED0-4219-9DAC-D534B727AD48-AUTO-TARGET" dmnElementRef="_C0FA3925-DED0-4219-9DAC-D534B727AD48">
+        <di:waypoint x="820" y="435"/>
+        <di:waypoint x="612" y="394.53546395193587"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
     <dmndi:DMNDiagram id="_F197794D-3609-42CD-9561-FD6C85642F5D" name="new-diagram">
