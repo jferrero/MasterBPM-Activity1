@@ -71,7 +71,7 @@
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text>-	Los jóvenes no miembros menores de 23 años, deben tener al menos 5 años de experiencia como conductores</dmn:text>
+          <dmn:text>Los jóvenes no miembros menores de 23 años, deben tener al menos 5 años de experiencia como conductores</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_391C3E67-9B42-4BD2-ACDF-0828EE96FFF4">
@@ -88,7 +88,7 @@
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text>-	Los jóvenes menores de 23 años y miembros de la tarjeta de fidelización deben tener solo 2 años de experiencia como conductor.</dmn:text>
+          <dmn:text>Los jóvenes menores de 23 años y miembros de la tarjeta de fidelización deben tener solo 2 años de experiencia como conductor.</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_D9101EFB-01A8-4816-B04F-DD78F47594C9">
