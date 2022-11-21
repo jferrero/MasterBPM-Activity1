@@ -79,7 +79,7 @@
           <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_6A8AFCB7-20E3-4806-A000-815E949528C9">
-          <dmn:text>[2..5)</dmn:text>
+          <dmn:text>[2..5]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_57291F36-5996-4C1C-9168-1E1F89BABF34">
           <dmn:text>true</dmn:text>
@@ -96,7 +96,7 @@
           <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_50C9D5A1-6A40-421E-A412-D4427A2193BA">
-          <dmn:text>(2..5)</dmn:text>
+          <dmn:text>[2..5]</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_97E3CB23-F1E0-4212-AEEA-1377A0DBFD0F">
           <dmn:text>false</dmn:text>
