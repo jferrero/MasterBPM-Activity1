@@ -170,7 +170,7 @@ de 40 €</dmn:text>
     <dmn:informationRequirement id="_14DDCE0F-5BD1-4A60-8E57-7342FE5B790D">
       <dmn:requiredDecision href="#_40FC3820-8F25-4636-B9DD-F8C3B0B47099"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_892F892B-55A4-47B5-86FD-388CBDFAC84F" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_892F892B-55A4-47B5-86FD-388CBDFAC84F" hitPolicy="UNIQUE" preferredOrientation="Rule-as-Row">
       <dmn:input id="_FECBF889-22BC-44C9-8EF1-33C8F5E59E1F">
         <dmn:inputExpression id="_01E6B274-39D8-497B-A250-AF1E0C90BF9B" typeRef="boolean">
           <dmn:text>DogCommittedAggresiveAct</dmn:text>
@@ -197,12 +197,26 @@ de 40 €</dmn:text>
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_8D61C0DB-80F7-4FA8-8517-5DB4849EE6C8">
+        <dmn:inputEntry id="_24212079-AEFE-4C4E-900D-AB8778693A45">
+          <dmn:text>false</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_60FAD9B9-514E-49EB-8A42-C8CD4564AF59">
+          <dmn:text>true</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_94A7FDFF-4A46-4656-9098-2210E1E3CA64">
+          <dmn:text>false</dmn:text>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_D67928BE-A833-49D6-A478-971A67AB7598">
         <dmn:inputEntry id="_A432B2BA-7BB8-44DB-9CD3-5ED7B1589871">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_17EB4AA8-99AB-47DD-88B5-673DD905F728">
-          <dmn:text>-</dmn:text>
+          <dmn:text>false</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_0D0361AD-BA03-4A44-B281-1FE0477375D4">
           <dmn:text>false</dmn:text>
