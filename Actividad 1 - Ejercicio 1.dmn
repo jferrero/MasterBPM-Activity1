@@ -108,6 +108,23 @@
           <dmn:text/>
         </dmn:annotationEntry>
       </dmn:rule>
+      <dmn:rule id="_AE87F5F6-ECD6-477F-BC7E-2A4532703E4F">
+        <dmn:inputEntry id="_E0755EDE-168C-4059-A3B7-438412A50F12">
+          <dmn:text>[18..22)</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_59CC2CBC-A682-47F9-A860-15CD934E28A9">
+          <dmn:text>&lt;2</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_4F50C8D8-3DF2-4A87-9564-26FE02796C34">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_FFFD0BFA-CA41-4963-94C4-7FEF78C94327">
+          <dmn:text/>
+        </dmn:outputEntry>
+        <dmn:annotationEntry>
+          <dmn:text/>
+        </dmn:annotationEntry>
+      </dmn:rule>
       <dmn:rule id="_F211A159-4B00-48B5-B8B3-DB66937A8A3D">
         <dmn:inputEntry id="_FFA09B6D-CC39-44F3-81B1-DA84D8BDB137">
           <dmn:text>&gt;=22</dmn:text>
