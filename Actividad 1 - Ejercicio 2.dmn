@@ -147,16 +147,16 @@ de 40 €</dmn:text>
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_61E0E537-2139-49C3-9378-0FA9DFE9D8DC">
-          <dmn:text>-</dmn:text>
+          <dmn:text>&lt;0.5</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A433F7CA-41FA-4FAA-9FC4-C8C1BBB42A75">
-          <dmn:text>-</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_702F9B29-A15D-489F-8E35-F60ABF0EE52B">
-          <dmn:text/>
+          <dmn:text>0</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Implicito, costo de la licencia es 0</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
     </dmn:decisionTable>
