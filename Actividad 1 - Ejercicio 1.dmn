@@ -96,29 +96,12 @@
           <dmn:text>[18..22)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_50C9D5A1-6A40-421E-A412-D4427A2193BA">
-          <dmn:text>[2..5)</dmn:text>
+          <dmn:text>(2..5)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_97E3CB23-F1E0-4212-AEEA-1377A0DBFD0F">
           <dmn:text>false</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_F08BE0D8-9DCD-455B-90E5-EEED5A4B15E6">
-          <dmn:text>false</dmn:text>
-        </dmn:outputEntry>
-        <dmn:annotationEntry>
-          <dmn:text/>
-        </dmn:annotationEntry>
-      </dmn:rule>
-      <dmn:rule id="_27FD32D5-CB97-4EDF-BDB9-F66B7A09CDA3">
-        <dmn:inputEntry id="_C4160740-A87D-40E3-B355-6733159920F4">
-          <dmn:text>[18..22)</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_B5F03561-9CAD-4CE9-8636-C43C762944DA">
-          <dmn:text>&lt;2</dmn:text>
-        </dmn:inputEntry>
-        <dmn:inputEntry id="_7A396AF2-903F-4FE9-8815-828C0EC730F4">
-          <dmn:text>-</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_526D790B-187B-4B0A-87B0-C955B6C9B531">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
