@@ -54,12 +54,12 @@
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text>Los clientes deben ser mayores de 18 años</dmn:text>
+          <dmn:text>Los clientes deben ser mayores de 18 años. Sin embargo esa sola condición no los califica</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_CDD26BAB-AF99-4799-AF99-A683AC1F10BB">
         <dmn:inputEntry id="_39DE0921-C3E3-46F1-9C90-AD7EE37E9577">
-          <dmn:text>[18..22)</dmn:text>
+          <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_69029F8F-7E7A-4AFB-AF68-4D001E19810C">
           <dmn:text>&gt;=5</dmn:text>
@@ -71,12 +71,12 @@
           <dmn:text>true</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text>Los jóvenes no miembros menores de 23 años, deben tener al menos 5 años de experiencia como conductores</dmn:text>
+          <dmn:text>Los jóvenes no miembros menores de 23 años, deben tener al menos 5 años de experiencia como conductores. Si son miembros se sobreentiende que de igual manera se les puede rentar</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_391C3E67-9B42-4BD2-ACDF-0828EE96FFF4">
         <dmn:inputEntry id="_60C11546-5E2F-4202-BE4A-4649E949558C">
-          <dmn:text>[18..22)</dmn:text>
+          <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_6A8AFCB7-20E3-4806-A000-815E949528C9">
           <dmn:text>[2..5)</dmn:text>
@@ -93,7 +93,7 @@
       </dmn:rule>
       <dmn:rule id="_D9101EFB-01A8-4816-B04F-DD78F47594C9">
         <dmn:inputEntry id="_ABE2D9CC-6C35-4876-94E9-E4AC4A91476D">
-          <dmn:text>[18..22)</dmn:text>
+          <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_50C9D5A1-6A40-421E-A412-D4427A2193BA">
           <dmn:text>(2..5)</dmn:text>
@@ -105,12 +105,12 @@
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Deben ser miembros para poder rentar con menos de 5 años de experiencia</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_AE87F5F6-ECD6-477F-BC7E-2A4532703E4F">
         <dmn:inputEntry id="_E0755EDE-168C-4059-A3B7-438412A50F12">
-          <dmn:text>[18..22)</dmn:text>
+          <dmn:text>[18..23)</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_59CC2CBC-A682-47F9-A860-15CD934E28A9">
           <dmn:text>&lt;2</dmn:text>
@@ -119,15 +119,15 @@
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_FFFD0BFA-CA41-4963-94C4-7FEF78C94327">
-          <dmn:text/>
+          <dmn:text>false</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
-          <dmn:text/>
+          <dmn:text>Implicito: A los menos de 23 con menos de dos años de experiencia no se les rentará</dmn:text>
         </dmn:annotationEntry>
       </dmn:rule>
       <dmn:rule id="_F211A159-4B00-48B5-B8B3-DB66937A8A3D">
         <dmn:inputEntry id="_FFA09B6D-CC39-44F3-81B1-DA84D8BDB137">
-          <dmn:text>&gt;=22</dmn:text>
+          <dmn:text>&gt;=23</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_14EE92D1-FF00-422E-9206-63648B1D318B">
           <dmn:text>-</dmn:text>
