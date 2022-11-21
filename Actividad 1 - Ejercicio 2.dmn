@@ -277,7 +277,7 @@ de 40 €</dmn:text>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="928" y="409.32558139534876" width="138" height="51"/>
+        <dc:Bounds x="940" y="397.32558139534876" width="138" height="51"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-drg-_C6144799-DD39-48FB-8FCB-E12B4A3DD40A" dmnElementRef="_C6144799-DD39-48FB-8FCB-E12B4A3DD40A" isCollapsed="false">
@@ -325,7 +325,7 @@ de 40 €</dmn:text>
         <di:waypoint x="837" y="145"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_17A2683F-04D2-41EB-B79A-2708B055AF11" dmnElementRef="_17A2683F-04D2-41EB-B79A-2708B055AF11">
-        <di:waypoint x="997" y="434.82558139534876"/>
+        <di:waypoint x="1009" y="422.82558139534876"/>
         <di:waypoint x="1009" y="280"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-drg-_14DDCE0F-5BD1-4A60-8E57-7342FE5B790D" dmnElementRef="_14DDCE0F-5BD1-4A60-8E57-7342FE5B790D">
